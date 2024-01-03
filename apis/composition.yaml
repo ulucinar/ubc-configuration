@@ -1,0 +1,24 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  name: xvpcs.ulucinar.github.com
+spec:
+  compositeTypeRef:
+    apiVersion: ulucinar.github.com/v1alpha1
+    kind: XVPC
+  resources:
+    - name: vpc
+      base:
+        apiVersion: ec2.aws.upbound.io/v1beta1
+        kind: VPC
+        spec:
+          forProvider:
+            region: us-west-1
+            cidrBlock: 172.16.0.0/16
+            tags:
+              Name: ubc-configuration-alper
+      patches:
+        - fromFieldPath: spec.parameters.region
+          toFieldPath: spec.forProvider.region
+          policy:
+            fromFieldPath: Required
