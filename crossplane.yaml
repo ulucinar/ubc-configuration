@@ -16,4 +16,4 @@ spec:
     version: ">=v1.7.0-0"
   dependsOn:
   - provider: xpkg.upbound.io/upbound/provider-aws
-    version: v0.48.0-rc.0.12.g5d2894e4b
+    version: v0.48.0-rc.0.10.g09d527641
