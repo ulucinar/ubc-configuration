@@ -15,5 +15,5 @@ spec:
   crossplane:
     version: ">=v1.7.0-0"
   dependsOn:
-  - provider: xpkg.upbound.io/upbound/provider-aws
-    version: v1.1.0-rc.0.25.g6137bed94
+  - provider: index.docker.io/ulucinar/provider-aws
+    version: v0.48.0-6ae7da03290fb367405f16377e5584b1ce94a627
