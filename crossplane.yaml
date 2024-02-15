@@ -15,5 +15,5 @@ spec:
   crossplane:
     version: ">=v1.7.0-0"
   dependsOn:
-  - provider: index.docker.io/erhancag/provider-aws-ec2
-    version: v1.0.1-6481d0cd8d92564b0b7fab4db9641bf1c32509a5-web-identity-auth
+  - provider: xpkg.upbound.io/upbound/provider-aws
+    version: v1.1.0-rc.0.25.g6137bed94
