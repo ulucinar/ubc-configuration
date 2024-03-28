@@ -15,5 +15,5 @@ spec:
   crossplane:
     version: ">=v1.7.0-0"
   dependsOn:
-  - provider: index.docker.io/erhancag/provider-aws-ec2
-    version: v1.2.0-refactor-1fabbe60e57d4c9040a15ac6f1b080a24d803c50
+  - provider: index.docker.io/ulucinar/provider-aws-ec2
+    version: v1.3.0-0fbbf02b3656352c729396851646d12ef80a1496
