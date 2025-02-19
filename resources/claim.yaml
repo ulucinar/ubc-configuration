@@ -1,0 +1,10 @@
+apiVersion: ulucinar.github.com/v1alpha1
+kind: NopResource
+metadata:
+  name: nop
+  namespace: default
+spec:
+  parameters:
+    connSecret:
+      name: conn-secret
+      namespace: default
