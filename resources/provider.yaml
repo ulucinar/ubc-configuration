@@ -2,6 +2,8 @@ apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
   name: provider-nop
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   package: xpkg.upbound.io/crossplane-contrib/provider-nop:v0.3.0
   runtimeConfigRef:
@@ -13,6 +15,8 @@ apiVersion: pkg.crossplane.io/v1beta1
 kind: DeploymentRuntimeConfig
 metadata:
   name: config-nop
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   deploymentTemplate:
     spec:
