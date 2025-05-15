@@ -2,8 +2,6 @@ apiVersion: apiextensions.crossplane.io/v1
 kind: Composition
 metadata:
   name: xnopresources.ulucinar.github.com
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
 spec:
   compositeTypeRef:
     apiVersion: ulucinar.github.com/v1alpha1
