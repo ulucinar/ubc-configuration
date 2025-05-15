@@ -23,3 +23,311 @@ spec:
             - name: package-runtime
               args:
                 - -d
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: crossplane-provider
+spec:
+  package: us-docker.pkg.dev/akuity/crossplane/provider:v0.2.4
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-argocd
+spec:
+  package: xpkg.upbound.io/crossplane-contrib/provider-argocd:v0.10.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws
+spec:
+  package: xpkg.upbound.io/crossplane-contrib/provider-aws:v0.52.3
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-athena
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-athena:v1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-autoscaling
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-autoscaling:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-cloudfront
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-cloudfront:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-cloudwatchlogs
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-cloudwatchlogs:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-codeartifact
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-codeartifact:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-ec2
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-ec2:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-ecr
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-ecr:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-eks
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-eks:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-elbv2
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-elbv2:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-glue
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-glue:v1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-iam
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-iam:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-kinesisanalyticsv2
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-kinesisanalyticsv2:v1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-networkfirewall
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-networkfirewall:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-rds
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-rds:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-route53
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-route53:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-route53resolver
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-route53resolver:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-s3
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-s3:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-secretsmanager
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-secretsmanager:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-waf
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws-waf:v1.20.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-helm
+spec:
+  package: xpkg.upbound.io/crossplane-contrib/provider-helm:v0.19.0
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-http
+spec:
+  package: xpkg.upbound.io/crossplane-contrib/provider-http:v1.0.8
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-kubernetes
+spec:
+  package: xpkg.upbound.io/crossplane-contrib/provider-kubernetes:v0.14.1
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-postgresql
+spec:
+  package: xpkg.upbound.io/tages/provider-postgresql:v0.1.0
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-sql
+spec:
+  package: xpkg.upbound.io/crossplane-contrib/provider-sql:v0.11.0
+  packagePullSecrets:
+    - name: upbound-pull-secret
+
+---
+
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-vault
+spec:
+  package: xpkg.upbound.io/upbound/provider-vault:v2
+  packagePullSecrets:
+    - name: upbound-pull-secret
