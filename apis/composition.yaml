@@ -6,6 +6,7 @@ spec:
   compositeTypeRef:
     apiVersion: ulucinar.github.com/v1alpha1
     kind: XVPC
+  mode: Resources
   resources:
     - name: vpc
       base:
