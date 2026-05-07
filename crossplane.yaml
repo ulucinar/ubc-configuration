@@ -17,3 +17,5 @@ spec:
   dependsOn:
   - provider: xpkg.upbound.io/upbound/provider-aws-ec2
     version: v1.7.0
+  - function: xpkg.crossplane.io/crossplane-contrib/function-patch-and-transform
+    version: v0.10.4
