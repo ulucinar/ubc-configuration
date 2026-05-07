@@ -15,7 +15,11 @@ spec:
   crossplane:
     version: ">=v1.7.0-0"
   dependsOn:
-  - provider: xpkg.upbound.io/upbound/provider-aws-ec2
+  - apiVersion: pkg.crossplane.io/v1
+    kind: Provider
+    package: xpkg.upbound.io/upbound/provider-aws-ec2
     version: v1.7.0
-  - function: xpkg.crossplane.io/crossplane-contrib/function-patch-and-transform
+  - apiVersion: pkg.crossplane.io/v1
+    kind: Function
+    package: xpkg.crossplane.io/crossplane-contrib/function-patch-and-transform
     version: v0.10.4
