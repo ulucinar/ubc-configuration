@@ -1,15 +1,15 @@
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:
-  name: xvpcs.ulucinar.github.com
+  name: xbuckets.ulucinar.github.com
 spec:
   group: ulucinar.github.com
   names:
-    kind: XVPC
-    plural: xvpcs
+    kind: XBucket
+    plural: xbuckets
   claimNames:
-    kind: VPC
-    plural: vpcs
+    kind: Bucket
+    plural: buckets
   versions:
   - name: v1alpha1
     served: true
@@ -23,12 +23,12 @@ spec:
             properties:
               parameters:
                 type: object
-                description: VPC parameters.
+                description: Bucket parameters.
                 properties:
-                  region:
+                  location:
                     type: string
-                    description: Region of the VPC.
+                    description: Location of the storage bucket.
                 required:
-                - region
+                - location
             required:
             - parameters
