@@ -1,0 +1,8 @@
+apiVersion: apiextensions.crossplane.io/v1alpha1
+kind: ManagedResourceActivationPolicy
+metadata:
+  name: buckets
+spec:
+  activate:
+  - buckets.storage.gcp.upbound.io
+
